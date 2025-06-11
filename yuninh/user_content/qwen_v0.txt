@@ -1,0 +1,45 @@
+Here’s how you would do this:
+Step 1: Determine the direction and patient Id. These are given.
+
+Step 2: Determine Using MLO: Upper, Lower, or Middle
+To do this, draw a coordinate system. You need to first locate the center point of the chest wall side (the side closer to the body — rib cage, bones), and then locate the nipple (the protrusion on the breast). Connect these two points to form the x-axis. The y-axis is defined as perpendicular to the chest wall side, not necessarily perpendicular to the x-axis. This coordinate system is different from the traditional one — the x and y axes do not have to be perpendicular.
+At this point, the breast is divided into upper and lower quadrants: If the tumor lies on the x-axis, it's considered MIDDLE. If the tumor lies above the x-axis, it's UPPER. If the tumor lies below the x-axis, it's LOWER.
+
+Step 3: Determine using CC outer (lateral) or inner (medial) or middle
+To do this, draw a coordinate system. You need to first locate the nipple (the protrusion on the breast), and then locate the chest wall side (the side closer to the body — rib cage, bones). From the nipple, draw a perpendicular line to the chest wall side — this line becomes the x-axis. The y-axis is defined along the chest wall side.
+At this point, the breast is divided into left and right quadrants: If the tumor lies on the x-axis, it's considered MIDDLE. If the tumor lies above the x-axis, it's OUTER (lateral). If the tumor lies below the x-axis, it's INNER (medial).
+
+Step 4: Further Classification on MLO Using Clock-Face Position
+Building upon the coordinate system used for MLO and the quadrant determination (UPPER or LOWER), we can further divide each quadrant based on angle, simulating four regions on a clock face: 12–3 o’clock, 3–6 o’clock, 6–9 o’clock, or 9–12 o’clock.
+We use the results from the previous three steps to determine which specific clock-face region the tumor is in.
+You can imagine each breast as a clock.
+For example:
+On the left breast:
+Upper outer = 12–3 o’clock
+Lower outer = 3–6 o’clock
+Lower inner = 6–9 o’clock
+Upper inner = 9–12 o’clock
+On the right breast:
+Upper inner = 12–3 o’clock
+Lower inner = 3–6 o’clock
+Lower outer = 6–9 o’clock
+Upper outer = 9–12 o’clock
+If we further divide the 12–3 o’clock region into three parts, they become:
+12–1
+1–2
+2–3
+We can then estimate the tumor’s position more precisely.
+If the tumor is labeled MIDDLE in MLO, it might correspond to 3:00 or 9:00, depending on the side and which breast it is.
+
+
+Step 5: Adjustment of Clock Position Due to Compression (Using MULD)
+Because the breast may be compressed during imaging, we need to adjust the clock position we initially determined.
+Generally, we use the MULD method — Medial Up, Lateral Down.
+If the tumor lies exactly on a clock line (e.g., 3 or 9, no decimal), then round to the next integer (based on MULD).
+If the tumor is in the inner (medial) region, we round down (toward the top of the clock).
+Note: This is not a simple floor function. It’s based on simulating a clock face. 
+For example:
+9 rounds down to 8
+If the tumor is in the outer (lateral) region, we round up (toward the bottom of the clock).
+For example:
+9 rounds up to 8
